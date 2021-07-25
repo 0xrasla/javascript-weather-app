@@ -4,10 +4,7 @@
 
  - You Have the total permission to modify the code as you want...
  - Let me know if you do some cool stuffs with it
- - Thanks
- **Warning**
- **
- - You Need to create your own api Key for openweathermap to use it.Dont forget it
 
-**
+**Warning**
+ - You Need to create your own api Key for openweathermap to use it.Dont forget it
 
