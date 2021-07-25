@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(9, 195, 237, 0.544);
+    margin: auto;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 1200px;
+    height: 620px;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather-container p+h3 {
+    color: blue;
+}

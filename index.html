@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/build/ol.js"></script>
+    <title>Weather App Using OpenLayers Map</title>
+</head>
+
+<body>
+    <h2>Weather App Using OpenLayers Map and Openweather Map - Lazy Code</h2>
+    <div id="map" class="map"></div>
+    <div class="weather-container">
+        <p>
+            <img id="im" src="./svg/wi-cloud.svg" width="80px">
+            <h3 id="default_climate_name">No Data</h3>
+        </p>
+        <p>
+            <img src="./svg/wi-day-windy.svg" width="80px">
+            <h3 id="wind">Wind</h3>
+        </p>
+        <p>
+            <img src="./svg/wi-humidity.svg" width="80px">
+            <h3 id="humidity">Humidity</h3>
+        </p>
+        <p>
+            <img src="./svg/wi-thermometer-exterior.svg" width="80px">
+            <h3 id="temp">Temp</h3>
+        </p>
+    </div>
+    <h2 id="placename">Place Name : Click pannatha therium</h2>
+    <h2 id="ltlng">
+        Lat, Lng : Time ila
+    </h2>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
