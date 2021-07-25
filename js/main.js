@@ -40,7 +40,7 @@ map.on('singleclick', function (evt) {
 })
 
 function main(latlng) {
-    let urlToFetch = `https://api.openweathermap.org/data/2.5/weather?lat=${latlng[0]}&lon=${latlng[1]}&appid=d1dd19772a6142d9c438357ee4f10cd5`
+    let urlToFetch = `https://api.openweathermap.org/data/2.5/weather?lat=${latlng[0]}&lon=${latlng[1]}&appid={You need to Create Your Own Api Key}`
 
     fetch(urlToFetch)
         .then(res => res.json())
