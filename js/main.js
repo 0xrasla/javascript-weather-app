@@ -48,12 +48,10 @@ function main(latlng) {
         .then(visuvalizeData)
         .catch(e => {
             alert("No data Found!")
-            console.log(e);
         })
 }
 
 function ParsetheResponse(res) {
-    console.log(res);
     let placename = res.name ? res.name : "No Data Found";
     let coords = [res.coord.lat, res.coord.lng] ? res.coord : "No Data Found"
     let windSpeed = res.wind.speed ? res.wind.speed : "0"
