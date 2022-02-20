@@ -33,6 +33,10 @@ var map = new ol.Map({
     })
 });
 
+ particlesJS.load('particles-js', 'particle.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
 map.on('singleclick', function (evt) {
     let latlng = ol.proj.transform(evt.coordinate, 'EPSG:3857', 'EPSG:4326');
     // placeMarker(latlng)
@@ -47,19 +51,18 @@ function main(latlng) {
         .then(ParsetheResponse)
         .then(visuvalizeData)
         .catch(e => {
-            alert("No data Found!")
         })
 }
 
 function ParsetheResponse(res) {
-    let placename = res.name ? res.name : "No Data Found";
+    let placename = res.name ? res.name : "Loacation Name Not Found";
     let coords = [res.coord.lat, res.coord.lng] ? res.coord : "No Data Found"
     let windSpeed = res.wind.speed ? res.wind.speed : "0"
     let humidity = res.main.humidity ? res.main.humidity : "0"
     let tempratue = res.main.temp ? res.main.temp : "0"
 
     let mainWeatherImgPath = climates[res.weather[0].description] ? climates[res.weather[0].description] : "./svg/wi-cloud.svg"
-    let mainWeatherDescription = res.weather[0].description ? res.weather[0].description : "No Data"
+    let mainWeatherDescription = res.weather[0].description ? res.weather[0].description : "No Weather Data Found"
 
     return {
         placename: placename,
@@ -74,7 +77,7 @@ function ParsetheResponse(res) {
 
 function visuvalizeData(dataObj) {
     placeNameNode.innerText = "Place Name :" + dataObj.placename;
-    latlngNode.innerText = "Lat Lng :" + dataObj.coords.lon + " " + dataObj.coords.lat
+    // latlngNode.innerText = "Lat Lng :" + dataObj.coords.lon + " " + dataObj.coords.lat
     windNode.innerText = dataObj.windSpeed
     humidityNode.innerText = dataObj.humidity
     tempratureNode.innerText = dataObj.tempratue

@@ -14,26 +14,45 @@
     <div id="map" class="map"></div>
     <div class="weather-container">
         <p>
-            <img id="im" src="./svg/wi-cloud.svg" width="80px">
-            <h3 id="default_climate_name">No Data</h3>
+        <div class="ico">
+            <img
+                src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/ffffff/external-cloud-weather-vitaliy-gorbachev-blue-vitaly-gorbachev.png" />
+                <h3>Weather Data</h3>
+                <h3 id="default_climate_name">No Weather Data Found</h3>
+        </div>
         </p>
         <p>
-            <img src="./svg/wi-day-windy.svg" width="80px">
-            <h3 id="wind">Wind</h3>
+        <div class="ico">
+            <img
+                src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-wind-weather-justicon-flat-justicon.png" />
+            <h3>Wind Data</h3>
+            <h3 id="wind"></h3>
+        </div>
         </p>
         <p>
-            <img src="./svg/wi-humidity.svg" width="80px">
-            <h3 id="humidity">Humidity</h3>
+        <div class="ico">
+            <img
+                src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/ffffff/external-humidity-weather-justicon-lineal-color-justicon.png" />
+            <h3>Humidity Data</h3>
+            <h3 id="humidity"></h3>
+        </div>
         </p>
         <p>
-            <img src="./svg/wi-thermometer-exterior.svg" width="80px">
-            <h3 id="temp">Temp</h3>
+        <div class="ico">
+            <img
+                src="https://img.icons8.com/external-filled-outline-wichaiwi/64/ffffff/external-heat-climate-change-filled-outline-wichaiwi.png" />
+
+                <h3>Temprature Data</h3>
+            <h3 id="temp"></h3>
+        </div>
         </p>
     </div>
     <h2 id="placename">Place Name : Click pannatha therium</h2>
-    <h2 id="ltlng">
+    <!-- <h2 id="ltlng">
         Lat, Lng : Time ila
-    </h2>
+    </h2> -->
+    <div id="particles-js"></div>
+    <script src="./js/particles.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
