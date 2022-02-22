@@ -11,6 +11,8 @@ body {
   overflow: hidden;
   font-family: "Redressed", cursive;
   color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
 .map {
